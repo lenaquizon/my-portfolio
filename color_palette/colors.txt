@@ -1,0 +1,15 @@
+/* 
+  My Portfolio Color Palette
+*/
+
+/* Color 1: Main Accent (Your favorite blue) */
+/* Used for headers, links, and primary calls-to-action. */
+#3b5cc4
+
+/* Color 2: Secondary Accent (Purple) */
+/* Used for subtle highlights or secondary elements. */
+#5e3bc4
+
+/* Color 3: Tertiary Accent (Cyan) */
+/* Used for hover effects or decorative elements. */
+#3ba1c4
