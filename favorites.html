@@ -10,8 +10,11 @@
     <div id="header-placeholder"></div>
 
     <main>
-        <section class="about-hero favorites-hero hero" data-video="cafe.mp4">
-            <video autoplay muted loop playsinline class="bg-video"></video>
+        <section class="hero favorites-hero">
+			<video autoplay muted loop id="bg-video">
+                <source src="videos/cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <div class="hero-content">
                 <h1>Favorites</h1>
                 <p>A collection of things I love.</p>
@@ -19,8 +22,63 @@
         </section>
 
         <div class="container">
-            <section class="content-cards">
-                <!-- Content for favorites will go here -->
+            <div class="favorites-panel">
+                <div class="favorites-column">
+                    <h3>🍔 Food</h3>
+                    <ul>
+                        <li>Matcha Latte</li>
+                        <li>Coffee</li>
+                        <li>French Fries</li>
+                        <li>Pizza</li>
+                        <li>Donuts</li>
+                        <li>Carbonara</li>
+                    </ul>
+                </div>
+                <div class="favorites-column">
+                    <h3>🎵 Music</h3>
+                    <h4>Artists</h4>
+                    <ul>
+                        <li>Seventeen</li>
+                        <li>Ado</li>
+                        <li>Imagine Dragons</li>
+                        <li>Niki</li>
+                    </ul>
+                    <h4>Songs</h4>
+                    <ul>
+                        <li>Farewell, Neverland</li>
+                        <li>F*ck My Life</li>
+                        <li>'bout You</li>
+                        <li>Homewrecker</li>
+                    </ul>
+                </div>
+                <div class="favorites-column">
+                    <h3>🎮 Games</h3>
+                    <ul>
+                        <li>Roblox</li>
+                        <li>Genshin Impact</li>
+                    </ul>
+                    <h3>🎨 Color</h3>
+                    <ul>
+                        <li>Gray</li>
+                        <li>Blue</li>
+                        <li>Black</li>
+                    </ul>
+                </div>
+                <div class="favorites-column">
+                    <h3>📺 YouTuber/Creators</h3>
+                    <ul>
+                        <li>Tuonto</li>
+                        <li>Antonychen</li>
+                        <li>Korean Englishman</li>
+                        <li>Jolly</li>
+                        <li>Rotten Mango</li>
+                        <li>Yes Theory</li>
+                    </ul>
+                </div>
+            </div>
+            <section class="content-cards" style="text-align: center;">
+                <h2>My Vibe</h2>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/28B9ZhKs6vd2tah5BZemnJ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </section>
         </div>
     </main>

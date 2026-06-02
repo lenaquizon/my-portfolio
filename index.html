@@ -9,17 +9,20 @@
 <body>
     <div id="header-placeholder"></div>
 
-    <section class="hero">
-        <h1>Welcome to my Portfolio!</h1>
-        <p>Hi! My name is <strong>Lena!</strong> Currently a college student who enjoys music, web surfing, gaming, and traveling.</p>
-    </section>
-
-    <main>
-        <section class="about-me">
-            <h2>About Me</h2>
-            <div class="about-me-content">
+    <section class="hero home-hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/home.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content-grid">
+            <div class="hero-welcome">
+                <h1>Welcome to my Portfolio!</h1>
+                <p>Hi! My name is <strong>Lena!</strong> Currently a college student who enjoys music, web surfing, gaming, and traveling.</p>
+                <a href="about.html" class="cta-button">Learn More About Me</a>
+            </div>
+            <div class="hero-about-me">
                 <img src="images/me.webp" alt="Lena Quizon">
-                <div class="about-me-text">
+                <div class="hero-about-me-text">
                     <ul>
                         <li>🎓 BSIT Student</li>
                         <li>📍 Philippines</li>
@@ -28,6 +31,38 @@
                         <li>✈️ Aspiring World Traveler</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="explore-portfolio">
+            <h2>Explore My Portfolio</h2>
+            <div class="portfolio-grid">
+                <a href="gallery.html" class="card portfolio-card">
+                    <video autoplay muted loop playsinline class="portfolio-card-video">
+                        <source src="videos/beach.mp4" type="video/mp4">
+                    </video>
+                    <h3>Gallery</h3>
+                </a>
+                <a href="skills.html" class="card portfolio-card">
+                    <video autoplay muted loop playsinline class="portfolio-card-video">
+                        <source src="videos/study.mp4" type="video/mp4">
+                    </video>
+                    <h3>Skills</h3>
+                </a>
+                <a href="favorites.html" class="card portfolio-card">
+                    <video autoplay muted loop playsinline class="portfolio-card-video">
+                        <source src="videos/cafe.mp4" type="video/mp4">
+                    </video>
+                    <h3>Favorites</h3>
+                </a>
+                <a href="bucket-list.html" class="card portfolio-card">
+                    <video autoplay muted loop playsinline class="portfolio-card-video">
+                        <source src="videos/travel.mp4" type="video/mp4">
+                    </video>
+                    <h3>Bucket List</h3>
+                </a>
             </div>
         </section>
     </main>
