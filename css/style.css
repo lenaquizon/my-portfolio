@@ -754,139 +754,159 @@ a:hover {
 
 /* 1. Food & Drinks (Warm Roasted Coffee & Matcha Amber Background) */
 .bento-food {
-    background: linear-gradient(135deg, #2e1b10 0%, #1a2c1f 50%, #29180e 100%);
-    background-size: 200% 200%;
-    animation: bento-gradient-flow 18s ease infinite alternate;
-    border: 1.5px solid rgba(245, 158, 11, 0.4);
+    background: linear-gradient(135deg, #3d2314 0%, #1c3822 50%, #3a2212 100%) !important;
+    background-size: 200% 200% !important;
+    animation: bento-gradient-flow 18s ease infinite alternate !important;
+    border: 2px solid #f59e0b !important;
 }
 
 .bento-food:hover {
-    border-color: rgba(245, 158, 11, 0.7);
-    box-shadow: 0 8px 32px rgba(245, 158, 11, 0.25);
+    border-color: #fbbf24 !important;
+    box-shadow: 0 8px 32px rgba(245, 158, 11, 0.35) !important;
 }
 
 .bento-food .fav-card-header {
-    border-bottom-color: rgba(245, 158, 11, 0.35);
+    border-bottom-color: rgba(245, 158, 11, 0.4) !important;
 }
 
 .bento-food .fav-icon,
 .bento-food h3 {
-    color: #fbbf24;
+    color: #fbbf24 !important;
 }
 
 /* 2. Music (Vibrant Royal Purple & Indigo Background) */
 .bento-music {
-    background: linear-gradient(135deg, #26113b 0%, #15163a 50%, #2c103f 100%);
-    background-size: 200% 200%;
-    animation: bento-gradient-flow 16s ease infinite alternate;
-    border: 1.5px solid rgba(168, 85, 247, 0.45);
+    background: linear-gradient(135deg, #3b145e 0%, #1e2168 50%, #481261 100%) !important;
+    background-size: 200% 200% !important;
+    animation: bento-gradient-flow 16s ease infinite alternate !important;
+    border: 2px solid #a855f7 !important;
 }
 
 .bento-music:hover {
-    border-color: rgba(168, 85, 247, 0.75);
-    box-shadow: 0 8px 35px rgba(168, 85, 247, 0.3);
+    border-color: #c084fc !important;
+    box-shadow: 0 8px 35px rgba(168, 85, 247, 0.4) !important;
 }
 
 .bento-music .fav-card-header {
-    border-bottom-color: rgba(168, 85, 247, 0.35);
+    border-bottom-color: rgba(168, 85, 247, 0.4) !important;
 }
 
 .bento-music .fav-icon,
 .bento-music h3 {
-    color: #c084fc;
+    color: #c084fc !important;
 }
 
 /* 3. Games (Cyber Dark Cyan & Emerald Background) */
 .bento-games {
-    background: linear-gradient(135deg, #0c2536 0%, #0d2e26 50%, #0a273b 100%);
-    background-size: 200% 200%;
-    animation: bento-gradient-flow 17s ease infinite alternate;
-    border: 1.5px solid rgba(6, 182, 212, 0.45);
+    background: linear-gradient(135deg, #0d384f 0%, #0d4235 50%, #093c52 100%) !important;
+    background-size: 200% 200% !important;
+    animation: bento-gradient-flow 17s ease infinite alternate !important;
+    border: 2px solid #06b6d4 !important;
 }
 
 .bento-games:hover {
-    border-color: rgba(6, 182, 212, 0.75);
-    box-shadow: 0 8px 32px rgba(6, 182, 212, 0.28);
+    border-color: #38bdf8 !important;
+    box-shadow: 0 8px 32px rgba(6, 182, 212, 0.35) !important;
 }
 
 .bento-games .fav-card-header {
-    border-bottom-color: rgba(6, 182, 212, 0.35);
+    border-bottom-color: rgba(6, 182, 212, 0.4) !important;
 }
 
 .bento-games .fav-icon,
 .bento-games h3 {
-    color: #38bdf8;
+    color: #38bdf8 !important;
 }
 
 /* 4. Colors (Slate Indigo & Prism Dusk Background) */
 .bento-colors {
-    background: linear-gradient(135deg, #1c1e36 0%, #151d2f 50%, #211c38 100%);
-    background-size: 200% 200%;
-    animation: bento-gradient-flow 19s ease infinite alternate;
-    border: 1.5px solid rgba(129, 140, 248, 0.45);
+    background: linear-gradient(135deg, #272a54 0%, #1d2b4f 50%, #302652 100%) !important;
+    background-size: 200% 200% !important;
+    animation: bento-gradient-flow 19s ease infinite alternate !important;
+    border: 2px solid #818cf8 !important;
 }
 
 .bento-colors:hover {
-    border-color: rgba(129, 140, 248, 0.75);
-    box-shadow: 0 8px 32px rgba(129, 140, 248, 0.28);
+    border-color: #a5b4fc !important;
+    box-shadow: 0 8px 32px rgba(129, 140, 248, 0.35) !important;
 }
 
 .bento-colors .fav-card-header {
-    border-bottom-color: rgba(129, 140, 248, 0.35);
+    border-bottom-color: rgba(129, 140, 248, 0.4) !important;
 }
 
 .bento-colors .fav-icon,
 .bento-colors h3 {
-    color: #a5b4fc;
+    color: #a5b4fc !important;
 }
 
 /* 5. YouTubers & Creators (Cinema Crimson / YouTube Red Background) */
 .bento-creators {
-    background: linear-gradient(135deg, #381118 0%, #28121d 50%, #3a1016 100%);
-    background-size: 200% 200%;
-    animation: bento-gradient-flow 15s ease infinite alternate;
-    border: 1.5px solid rgba(239, 68, 68, 0.45);
+    background: linear-gradient(135deg, #591620 0%, #3b1629 50%, #52121c 100%) !important;
+    background-size: 200% 200% !important;
+    animation: bento-gradient-flow 15s ease infinite alternate !important;
+    border: 2px solid #ef4444 !important;
 }
 
 .bento-creators:hover {
-    border-color: rgba(239, 68, 68, 0.75);
-    box-shadow: 0 8px 35px rgba(239, 68, 68, 0.28);
+    border-color: #f87171 !important;
+    box-shadow: 0 8px 35px rgba(239, 68, 68, 0.35) !important;
 }
 
 .bento-creators .fav-card-header {
-    border-bottom-color: rgba(239, 68, 68, 0.35);
+    border-bottom-color: rgba(239, 68, 68, 0.4) !important;
 }
 
 .bento-creators .fav-icon,
 .bento-creators h3 {
-    color: #f87171;
+    color: #f87171 !important;
 }
 
 /* 6. Spotify Vibe (Spotify Forest Emerald Background) */
 .bento-spotify {
-    background: linear-gradient(135deg, #0e2b1b 0%, #112218 50%, #0c2b19 100%);
-    background-size: 200% 200%;
-    animation: bento-gradient-flow 18s ease infinite alternate;
-    border: 1.5px solid rgba(29, 185, 84, 0.45);
+    background: linear-gradient(135deg, #114224 0%, #143622 50%, #0c3d20 100%) !important;
+    background-size: 200% 200% !important;
+    animation: bento-gradient-flow 18s ease infinite alternate !important;
+    border: 2px solid #1db954 !important;
 }
 
 .bento-spotify:hover {
-    border-color: rgba(29, 185, 84, 0.75);
-    box-shadow: 0 8px 35px rgba(29, 185, 84, 0.3);
+    border-color: #22c55e !important;
+    box-shadow: 0 8px 35px rgba(29, 185, 84, 0.35) !important;
 }
 
 .bento-spotify .fav-card-header {
-    border-bottom-color: rgba(29, 185, 84, 0.35);
+    border-bottom-color: rgba(29, 185, 84, 0.4) !important;
 }
 
 .bento-spotify .fav-icon,
 .bento-spotify h3 {
-    color: #1db954;
+    color: #1db954 !important;
 }
 
 /* =========================================
    COMPONENTS INSIDE BENTO BOXES (BALANCED HEIGHTS)
    ========================================= */
+
+/* Strict avatar & icon sizing for the whole grid */
+.favorites-grid img,
+.mini-avatar,
+.artist-avatar,
+.creator-avatar {
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 22px !important;
+    max-width: 22px !important;
+    min-height: 22px !important;
+    max-height: 22px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: inline-block !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
 
 /* 2-Column Item Grids */
 .fav-items-2col {
@@ -901,8 +921,8 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    background: rgba(245, 158, 11, 0.1);
-    border: 1px solid rgba(245, 158, 11, 0.25);
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid rgba(245, 158, 11, 0.35);
     border-radius: 8px;
     padding: 0.48rem 0.7rem;
     transition: all 0.25s ease;
@@ -910,7 +930,7 @@ a:hover {
 }
 
 .fav-item-row:hover {
-    background: rgba(245, 158, 11, 0.22);
+    background: rgba(245, 158, 11, 0.3);
     border-color: #fbbf24;
     transform: translateX(3px);
 }
@@ -970,8 +990,8 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(168, 85, 247, 0.1);
-    border: 1px solid rgba(168, 85, 247, 0.25);
+    background: rgba(168, 85, 247, 0.15);
+    border: 1px solid rgba(168, 85, 247, 0.35);
     border-radius: 8px;
     padding: 0.45rem 0.65rem;
     text-decoration: none;
@@ -981,7 +1001,7 @@ a:hover {
 }
 
 .music-item-row:hover {
-    background: rgba(168, 85, 247, 0.24);
+    background: rgba(168, 85, 247, 0.3);
     border-color: #c084fc;
     color: #ffffff;
     transform: translateX(3px);
@@ -989,15 +1009,6 @@ a:hover {
 
 .music-item-row .fav-num {
     color: #c084fc;
-}
-
-.mini-avatar {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    flex-shrink: 0;
 }
 
 .row-yt-icon {
@@ -1024,17 +1035,17 @@ a:hover {
 
 /* Games Rows */
 .game-row {
-    background: rgba(6, 182, 212, 0.1);
-    border-color: rgba(6, 182, 212, 0.25);
+    background: rgba(6, 182, 212, 0.15);
+    border-color: rgba(6, 182, 212, 0.35);
     gap: 0.75rem;
     padding: 0.65rem 0.85rem;
 }
 
 .game-row:hover {
-    background: rgba(6, 182, 212, 0.22);
+    background: rgba(6, 182, 212, 0.3);
     border-color: #38bdf8;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.25);
 }
 
 .fav-game-ico {
@@ -1072,8 +1083,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: rgba(129, 140, 248, 0.1);
-    border: 1px solid rgba(129, 140, 248, 0.25);
+    background: rgba(129, 140, 248, 0.15);
+    border: 1px solid rgba(129, 140, 248, 0.35);
     border-radius: 8px;
     padding: 0.55rem 0.4rem;
     gap: 0.2rem;
@@ -1081,7 +1092,7 @@ a:hover {
 }
 
 .color-tile:hover {
-    background: rgba(129, 140, 248, 0.22);
+    background: rgba(129, 140, 248, 0.3);
     border-color: #a5b4fc;
     transform: translateY(-2px);
 }
@@ -1131,8 +1142,8 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.65rem;
-    background: rgba(239, 68, 68, 0.1);
-    border: 1px solid rgba(239, 68, 68, 0.25);
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.35);
     border-radius: 10px;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
@@ -1141,11 +1152,40 @@ a:hover {
 }
 
 .creator-item-row:hover {
-    background: rgba(239, 68, 68, 0.22);
+    background: rgba(239, 68, 68, 0.3);
     border-color: #f87171;
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(239, 68, 68, 0.25);
+}
+
+.creator-info-inline {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex-grow: 1;
+}
+
+.creator-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.creator-handle {
+    font-size: 0.68rem;
+    color: #9ca3af;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.creator-yt-ico {
+    color: #ef4444;
+    font-size: 0.85rem;
+    margin-left: auto;
+    flex-shrink: 0;
 }
 
 .creator-info-inline {
