@@ -24,8 +24,8 @@
 
         <div class="container">
             <div class="favorites-grid">
-                <!-- Food & Drinks -->
-                <div class="card fav-card">
+                <!-- Food & Drinks Box -->
+                <div class="card fav-card bento-food">
                     <div class="fav-card-header">
                         <i class="fas fa-utensils fav-icon"></i>
                         <h3>Food & Drinks</h3>
@@ -58,64 +58,118 @@
                     </div>
                 </div>
 
-                <!-- Music -->
-                <div class="card fav-card fav-card-music">
+                <!-- Music Box -->
+                <div class="card fav-card bento-music">
                     <div class="fav-card-header">
                         <i class="fas fa-music fav-icon"></i>
                         <h3>Music</h3>
                     </div>
+                    
+                    <!-- Favorite Artists with YouTube Profiles -->
                     <div class="fav-music-group">
                         <span class="fav-group-label"><i class="fas fa-user-friends"></i> Favorite Artists</span>
-                        <div class="fav-tags">
-                            <span class="fav-tag">Seventeen</span>
-                            <span class="fav-tag">Ado</span>
-                            <span class="fav-tag">Imagine Dragons</span>
-                            <span class="fav-tag">Niki</span>
+                        <div class="fav-artists-grid">
+                            <a href="https://www.youtube.com/channel/UCfkXDY7vwkcJ8ddFGz8KusA" target="_blank" rel="noopener noreferrer" class="artist-pill-card">
+                                <img src="https://yt3.googleusercontent.com/ZGqaImntHbCllA_dkYLrc5kH8JE1KNSy2bP7vkWsXjFXgNSzsP2it9qHh7oaQLLJL25B48C2TA=s900-c-k-c0x00ffffff-no-rj" alt="Seventeen" class="artist-avatar">
+                                <span class="artist-name">Seventeen</span>
+                                <i class="fab fa-youtube yt-micro-icon"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@ado" target="_blank" rel="noopener noreferrer" class="artist-pill-card">
+                                <img src="https://yt3.googleusercontent.com/ytc/AIdro_kitQNz_bG3vu9EJ_7Zqbsay744alucpklpKfUNC5qpTw=s900-c-k-c0x00ffffff-no-rj" alt="Ado" class="artist-avatar">
+                                <span class="artist-name">Ado</span>
+                                <i class="fab fa-youtube yt-micro-icon"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCT9zcQNlyht7fRlcjmflRSA" target="_blank" rel="noopener noreferrer" class="artist-pill-card">
+                                <img src="https://yt3.googleusercontent.com/l6ARvvtI4GWlZMV0nMCoatBy6NjJIB_PVK4ZTEpImbspN57kMaSqMHskIPXkgxsiISB0inbO9J4=s900-c-k-c0x00ffffff-no-rj" alt="Imagine Dragons" class="artist-avatar">
+                                <span class="artist-name">Imagine Dragons</span>
+                                <i class="fab fa-youtube yt-micro-icon"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCaAWRu53UW815hGTmxvHFbA" target="_blank" rel="noopener noreferrer" class="artist-pill-card">
+                                <img src="https://yt3.googleusercontent.com/ZeCXLxPu3dKLdWb971oyMVSdU9hiEcdL_92N_oE7ulctKUbquNpO9mYBlDP706_KtNvdXHLt=s900-c-k-c0x00ffffff-no-rj" alt="Niki" class="artist-avatar">
+                                <span class="artist-name">Niki</span>
+                                <i class="fab fa-youtube yt-micro-icon"></i>
+                            </a>
                         </div>
                     </div>
+
+                    <!-- Favorite Songs with YouTube Thumbnails -->
                     <div class="fav-music-group">
                         <span class="fav-group-label"><i class="fas fa-compact-disc"></i> Favorite Songs</span>
-                        <div class="fav-tracklist">
-                            <div class="fav-track-item">
-                                <span class="fav-track-num">01</span>
-                                <span class="fav-track-name">Farewell, Neverland</span>
-                                <i class="fas fa-play fav-track-play"></i>
-                            </div>
-                            <div class="fav-track-item">
-                                <span class="fav-track-num">02</span>
-                                <span class="fav-track-name">F*ck My Life</span>
-                                <i class="fas fa-play fav-track-play"></i>
-                            </div>
-                            <div class="fav-track-item">
-                                <span class="fav-track-num">03</span>
-                                <span class="fav-track-name">'bout You</span>
-                                <i class="fas fa-play fav-track-play"></i>
-                            </div>
-                            <div class="fav-track-item">
-                                <span class="fav-track-num">04</span>
-                                <span class="fav-track-name">Homewrecker</span>
-                                <i class="fas fa-play fav-track-play"></i>
-                            </div>
+                        <div class="fav-songs-grid">
+                            <a href="https://www.youtube.com/watch?v=gd6B4kRgI78" target="_blank" rel="noopener noreferrer" class="song-card">
+                                <div class="song-thumb-wrapper">
+                                    <img src="https://img.youtube.com/vi/gd6B4kRgI78/mqdefault.jpg" alt="Farewell, Neverland" class="song-thumb">
+                                    <div class="song-play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <div class="song-info">
+                                    <span class="song-number">01</span>
+                                    <span class="song-title">Farewell, Neverland</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.youtube.com/watch?v=9kpuOoIh3wU" target="_blank" rel="noopener noreferrer" class="song-card">
+                                <div class="song-thumb-wrapper">
+                                    <img src="https://img.youtube.com/vi/9kpuOoIh3wU/mqdefault.jpg" alt="F*ck My Life" class="song-thumb">
+                                    <div class="song-play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <div class="song-info">
+                                    <span class="song-number">02</span>
+                                    <span class="song-title">F*ck My Life</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.youtube.com/watch?v=zSnKi7hqFsQ" target="_blank" rel="noopener noreferrer" class="song-card">
+                                <div class="song-thumb-wrapper">
+                                    <img src="https://img.youtube.com/vi/zSnKi7hqFsQ/mqdefault.jpg" alt="'bout You" class="song-thumb">
+                                    <div class="song-play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <div class="song-info">
+                                    <span class="song-number">03</span>
+                                    <span class="song-title">'bout You</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.youtube.com/watch?v=mQezde_qeXw" target="_blank" rel="noopener noreferrer" class="song-card">
+                                <div class="song-thumb-wrapper">
+                                    <img src="https://img.youtube.com/vi/mQezde_qeXw/mqdefault.jpg" alt="Homewrecker" class="song-thumb">
+                                    <div class="song-play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <div class="song-info">
+                                    <span class="song-number">04</span>
+                                    <span class="song-title">Homewrecker</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.youtube.com/watch?v=TVDQrjNsU94" target="_blank" rel="noopener noreferrer" class="song-card">
+                                <div class="song-thumb-wrapper">
+                                    <img src="https://img.youtube.com/vi/TVDQrjNsU94/mqdefault.jpg" alt="Cut My Hair" class="song-thumb">
+                                    <div class="song-play-overlay"><i class="fas fa-play"></i></div>
+                                </div>
+                                <div class="song-info">
+                                    <span class="song-number">05</span>
+                                    <span class="song-title">Cut My Hair</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Games -->
-                <div class="card fav-card">
+                <!-- Games Box -->
+                <div class="card fav-card bento-games">
                     <div class="fav-card-header">
                         <i class="fas fa-gamepad fav-icon"></i>
                         <h3>Games</h3>
                     </div>
                     <div class="fav-games-grid">
                         <div class="fav-game-item">
-                            <i class="fas fa-cubes fav-game-icon"></i>
+                            <i class="fas fa-cube fav-game-icon"></i>
                             <div class="fav-game-info">
                                 <h4>Roblox</h4>
                                 <span>Multiplayer & Sandbox</span>
                             </div>
                         </div>
                         <div class="fav-game-item">
-                            <i class="fas fa-wand-magic-sparkles fav-game-icon"></i>
+                            <i class="fas fa-sparkles fav-game-icon"></i>
                             <div class="fav-game-info">
                                 <h4>Genshin Impact</h4>
                                 <span>Open-World RPG</span>
@@ -124,8 +178,8 @@
                     </div>
                 </div>
 
-                <!-- Colors -->
-                <div class="card fav-card">
+                <!-- Colors Box -->
+                <div class="card fav-card bento-colors">
                     <div class="fav-card-header">
                         <i class="fas fa-palette fav-icon"></i>
                         <h3>Colors</h3>
@@ -155,43 +209,72 @@
                     </div>
                 </div>
 
-                <!-- YouTubers & Creators -->
-                <div class="card fav-card fav-card-full">
+                <!-- YouTubers & Creators Box -->
+                <div class="card fav-card fav-card-full bento-creators">
                     <div class="fav-card-header">
                         <i class="fab fa-youtube fav-icon"></i>
                         <h3>YouTubers & Creators</h3>
                     </div>
                     <div class="fav-creators-grid">
-                        <div class="fav-creator-item">
-                            <i class="fas fa-video"></i>
-                            <span>Tuonto</span>
-                        </div>
-                        <div class="fav-creator-item">
-                            <i class="fas fa-video"></i>
-                            <span>Antonychen</span>
-                        </div>
-                        <div class="fav-creator-item">
-                            <i class="fas fa-video"></i>
-                            <span>Korean Englishman</span>
-                        </div>
-                        <div class="fav-creator-item">
-                            <i class="fas fa-video"></i>
-                            <span>Jolly</span>
-                        </div>
-                        <div class="fav-creator-item">
-                            <i class="fas fa-video"></i>
-                            <span>Rotten Mango</span>
-                        </div>
-                        <div class="fav-creator-item">
-                            <i class="fas fa-video"></i>
-                            <span>Yes Theory</span>
-                        </div>
+                        <a href="https://www.youtube.com/@Tuonto" target="_blank" rel="noopener noreferrer" class="creator-card">
+                            <img src="https://yt3.googleusercontent.com/nqJCMA64ooKmLORuWFg2jPSoeNuOyZWmshxLD99Odp26NOho8RMh5oIMD-kEsoaRNQyr_t3ER_Q=s900-c-k-c0x00ffffff-no-rj" alt="Tuonto" class="creator-avatar">
+                            <div class="creator-details">
+                                <span class="creator-name">Tuonto</span>
+                                <span class="creator-handle">@Tuonto</span>
+                            </div>
+                            <i class="fab fa-youtube creator-yt-badge"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@antonychenn" target="_blank" rel="noopener noreferrer" class="creator-card">
+                            <img src="https://yt3.googleusercontent.com/0bLyl4TavCcoqogz17hfa6_3kHN5sKg8G6srVBphBIXy9dz6PZPVi4_9gDwGaqxD2XnLXpB5=s900-c-k-c0x00ffffff-no-rj" alt="Antonychen" class="creator-avatar">
+                            <div class="creator-details">
+                                <span class="creator-name">Antonychen</span>
+                                <span class="creator-handle">@antonychenn</span>
+                            </div>
+                            <i class="fab fa-youtube creator-yt-badge"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@koreanenglishman" target="_blank" rel="noopener noreferrer" class="creator-card">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIdro_l3NBOaLOnWVdNU7jOKWzusqmRxIdfsMFDyqugLcRM6dvs=s900-c-k-c0x00ffffff-no-rj" alt="Korean Englishman" class="creator-avatar">
+                            <div class="creator-details">
+                                <span class="creator-name">Korean Englishman</span>
+                                <span class="creator-handle">@koreanenglishman</span>
+                            </div>
+                            <i class="fab fa-youtube creator-yt-badge"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@jolly" target="_blank" rel="noopener noreferrer" class="creator-card">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIdro_lJqz1KnNbaOOVlh3HO1eywam8lbSUG1LrymlvD9waX23Q=s900-c-k-c0x00ffffff-no-rj" alt="Jolly" class="creator-avatar">
+                            <div class="creator-details">
+                                <span class="creator-name">Jolly</span>
+                                <span class="creator-handle">@jolly</span>
+                            </div>
+                            <i class="fab fa-youtube creator-yt-badge"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@rottenmangopod" target="_blank" rel="noopener noreferrer" class="creator-card">
+                            <img src="https://yt3.googleusercontent.com/mdjuZF8CI4G7hT-DyjrG1yw8Gc8ShoDuqYzXvgEGdCUESOL82m5YDe9irV_GgRuSdZHJKRU6Qw=s900-c-k-c0x00ffffff-no-rj" alt="Rotten Mango" class="creator-avatar">
+                            <div class="creator-details">
+                                <span class="creator-name">Rotten Mango</span>
+                                <span class="creator-handle">@rottenmangopod</span>
+                            </div>
+                            <i class="fab fa-youtube creator-yt-badge"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@YesTheory" target="_blank" rel="noopener noreferrer" class="creator-card">
+                            <img src="https://yt3.googleusercontent.com/bdI_oMvgn9Ib9rwv89h89Xd5TcOh2K2DEgzsJdi1dfzXPXLXj2ARFTGzs9oOu_xQLHsCjj2E=s900-c-k-c0x00ffffff-no-rj" alt="Yes Theory" class="creator-avatar">
+                            <div class="creator-details">
+                                <span class="creator-name">Yes Theory</span>
+                                <span class="creator-handle">@YesTheory</span>
+                            </div>
+                            <i class="fab fa-youtube creator-yt-badge"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Spotify Playlist Section -->
-            <section class="card spotify-card">
+            <section class="card spotify-card bento-spotify">
                 <div class="fav-card-header spotify-header">
                     <i class="fab fa-spotify fav-icon"></i>
                     <h3>My Vibe</h3>
