@@ -982,28 +982,22 @@ a:hover {
 }
 
 .bento-music .song-thumb-wrapper {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
 .bento-music .song-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .bento-music .song-play-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.28);
-}
-
-.bento-music .song-play-overlay i {
-    font-size: 1.8rem;
+    display: none;
 }
 
 .bento-music .song-number {
