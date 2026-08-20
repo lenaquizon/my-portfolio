@@ -1065,6 +1065,10 @@ a:hover {
     font-size: 1.5rem;
 }
 
+.bento-music > .fav-music-group:last-of-type .fav-group-label {
+    margin-bottom: 0.8rem;
+}
+
 .bento-music .song-card {
     gap: 0.45rem;
 }
