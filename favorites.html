@@ -30,13 +30,31 @@
                         <i class="fas fa-utensils fav-icon"></i>
                         <h3>Food & Drinks</h3>
                     </div>
-                    <div class="fav-tags">
-                        <span class="fav-tag"><i class="fas fa-mug-hot"></i> Matcha Latte</span>
-                        <span class="fav-tag"><i class="fas fa-coffee"></i> Coffee</span>
-                        <span class="fav-tag"><i class="fas fa-box"></i> French Fries</span>
-                        <span class="fav-tag"><i class="fas fa-pizza-slice"></i> Pizza</span>
-                        <span class="fav-tag"><i class="fas fa-cookie"></i> Donuts</span>
-                        <span class="fav-tag"><i class="fas fa-bowl-food"></i> Carbonara</span>
+                    <div class="fav-food-grid">
+                        <div class="fav-food-item">
+                            <span class="fav-num">01</span>
+                            <span class="fav-food-name">Matcha Latte</span>
+                        </div>
+                        <div class="fav-food-item">
+                            <span class="fav-num">02</span>
+                            <span class="fav-food-name">Coffee</span>
+                        </div>
+                        <div class="fav-food-item">
+                            <span class="fav-num">03</span>
+                            <span class="fav-food-name">French Fries</span>
+                        </div>
+                        <div class="fav-food-item">
+                            <span class="fav-num">04</span>
+                            <span class="fav-food-name">Pizza</span>
+                        </div>
+                        <div class="fav-food-item">
+                            <span class="fav-num">05</span>
+                            <span class="fav-food-name">Donuts</span>
+                        </div>
+                        <div class="fav-food-item">
+                            <span class="fav-num">06</span>
+                            <span class="fav-food-name">Carbonara</span>
+                        </div>
                     </div>
                 </div>
 
@@ -57,11 +75,27 @@
                     </div>
                     <div class="fav-music-group">
                         <span class="fav-group-label"><i class="fas fa-compact-disc"></i> Favorite Songs</span>
-                        <div class="fav-tags">
-                            <span class="fav-tag">Farewell, Neverland</span>
-                            <span class="fav-tag">F*ck My Life</span>
-                            <span class="fav-tag">'bout You</span>
-                            <span class="fav-tag">Homewrecker</span>
+                        <div class="fav-tracklist">
+                            <div class="fav-track-item">
+                                <span class="fav-track-num">01</span>
+                                <span class="fav-track-name">Farewell, Neverland</span>
+                                <i class="fas fa-play fav-track-play"></i>
+                            </div>
+                            <div class="fav-track-item">
+                                <span class="fav-track-num">02</span>
+                                <span class="fav-track-name">F*ck My Life</span>
+                                <i class="fas fa-play fav-track-play"></i>
+                            </div>
+                            <div class="fav-track-item">
+                                <span class="fav-track-num">03</span>
+                                <span class="fav-track-name">'bout You</span>
+                                <i class="fas fa-play fav-track-play"></i>
+                            </div>
+                            <div class="fav-track-item">
+                                <span class="fav-track-num">04</span>
+                                <span class="fav-track-name">Homewrecker</span>
+                                <i class="fas fa-play fav-track-play"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,38 +106,86 @@
                         <i class="fas fa-gamepad fav-icon"></i>
                         <h3>Games</h3>
                     </div>
-                    <div class="fav-tags">
-                        <span class="fav-tag"><i class="fas fa-cube"></i> Roblox</span>
-                        <span class="fav-tag"><i class="fas fa-sparkles"></i> Genshin Impact</span>
+                    <div class="fav-games-grid">
+                        <div class="fav-game-item">
+                            <i class="fas fa-cubes fav-game-icon"></i>
+                            <div class="fav-game-info">
+                                <h4>Roblox</h4>
+                                <span>Multiplayer & Sandbox</span>
+                            </div>
+                        </div>
+                        <div class="fav-game-item">
+                            <i class="fas fa-wand-magic-sparkles fav-game-icon"></i>
+                            <div class="fav-game-info">
+                                <h4>Genshin Impact</h4>
+                                <span>Open-World RPG</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Favorite Colors -->
+                <!-- Colors -->
                 <div class="card fav-card">
                     <div class="fav-card-header">
                         <i class="fas fa-palette fav-icon"></i>
                         <h3>Colors</h3>
                     </div>
-                    <div class="fav-tags fav-color-tags">
-                        <span class="fav-tag fav-color-tag"><span class="color-dot color-gray"></span> Gray</span>
-                        <span class="fav-tag fav-color-tag"><span class="color-dot color-blue"></span> Blue</span>
-                        <span class="fav-tag fav-color-tag"><span class="color-dot color-black"></span> Black</span>
+                    <div class="fav-colors-grid">
+                        <div class="fav-color-card">
+                            <div class="fav-swatch-box color-gray-bg"></div>
+                            <div class="fav-color-meta">
+                                <span class="fav-color-title">Gray</span>
+                                <span class="fav-color-hex">#808080</span>
+                            </div>
+                        </div>
+                        <div class="fav-color-card">
+                            <div class="fav-swatch-box color-blue-bg"></div>
+                            <div class="fav-color-meta">
+                                <span class="fav-color-title">Blue</span>
+                                <span class="fav-color-hex">#3b5cc4</span>
+                            </div>
+                        </div>
+                        <div class="fav-color-card">
+                            <div class="fav-swatch-box color-black-bg"></div>
+                            <div class="fav-color-meta">
+                                <span class="fav-color-title">Black</span>
+                                <span class="fav-color-hex">#111111</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Content Creators -->
+                <!-- YouTubers & Creators -->
                 <div class="card fav-card fav-card-full">
                     <div class="fav-card-header">
                         <i class="fab fa-youtube fav-icon"></i>
                         <h3>YouTubers & Creators</h3>
                     </div>
-                    <div class="fav-tags">
-                        <span class="fav-tag"><i class="fas fa-play"></i> Tuonto</span>
-                        <span class="fav-tag"><i class="fas fa-play"></i> Antonychen</span>
-                        <span class="fav-tag"><i class="fas fa-play"></i> Korean Englishman</span>
-                        <span class="fav-tag"><i class="fas fa-play"></i> Jolly</span>
-                        <span class="fav-tag"><i class="fas fa-play"></i> Rotten Mango</span>
-                        <span class="fav-tag"><i class="fas fa-play"></i> Yes Theory</span>
+                    <div class="fav-creators-grid">
+                        <div class="fav-creator-item">
+                            <i class="fas fa-video"></i>
+                            <span>Tuonto</span>
+                        </div>
+                        <div class="fav-creator-item">
+                            <i class="fas fa-video"></i>
+                            <span>Antonychen</span>
+                        </div>
+                        <div class="fav-creator-item">
+                            <i class="fas fa-video"></i>
+                            <span>Korean Englishman</span>
+                        </div>
+                        <div class="fav-creator-item">
+                            <i class="fas fa-video"></i>
+                            <span>Jolly</span>
+                        </div>
+                        <div class="fav-creator-item">
+                            <i class="fas fa-video"></i>
+                            <span>Rotten Mango</span>
+                        </div>
+                        <div class="fav-creator-item">
+                            <i class="fas fa-video"></i>
+                            <span>Yes Theory</span>
+                        </div>
                     </div>
                 </div>
             </div>
