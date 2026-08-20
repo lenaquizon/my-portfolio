@@ -919,6 +919,79 @@ a:hover {
     font-size: 1.15rem;
 }
 
+.bento-music .fav-artists-grid,
+.bento-music .fav-songs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.7rem;
+}
+
+.bento-music .artist-card,
+.bento-music .song-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    text-align: center;
+}
+
+.bento-music .artist-card {
+    position: relative;
+    gap: 0.45rem;
+    padding: 0.7rem 0.45rem;
+}
+
+.bento-music .artist-avatar {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+    max-width: 56px !important;
+    min-height: 56px !important;
+    max-height: 56px !important;
+}
+
+.bento-music .artist-details,
+.bento-music .song-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+}
+
+.bento-music .artist-name,
+.bento-music .artist-handle,
+.bento-music .song-title {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bento-music .artist-yt-badge {
+    font-size: 1.1rem;
+    margin-top: 0.1rem;
+}
+
+.bento-music .song-card {
+    gap: 0.45rem;
+}
+
+.bento-music .song-thumb-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.bento-music .song-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bento-music .song-number {
+    font-size: 0.78rem;
+}
+
 /* 2-Column Item Grids */
 .fav-items-2col {
     display: grid;
