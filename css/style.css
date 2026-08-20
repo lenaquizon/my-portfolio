@@ -919,27 +919,6 @@ a:hover {
     font-size: 1.15rem;
 }
 
-.favorites-grid .artist-avatar,
-.favorites-grid .creator-avatar {
-    width: 36px !important;
-    height: 36px !important;
-    min-width: 36px !important;
-    max-width: 36px !important;
-    min-height: 36px !important;
-    max-height: 36px !important;
-}
-
-.favorites-grid .artist-initials {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    background: #a855f7;
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 700;
-    font-family: 'Roboto Mono', monospace;
-}
-
 /* 2-Column Item Grids */
 .fav-items-2col {
     display: grid;
