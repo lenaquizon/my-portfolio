@@ -974,6 +974,70 @@ a:hover {
     max-height: 56px !important;
 }
 
+.bento-creators .creator-avatar {
+    width: 88px !important;
+    height: 88px !important;
+    min-width: 88px !important;
+    max-width: 88px !important;
+    min-height: 88px !important;
+    max-height: 88px !important;
+}
+
+.bento-creators .fav-creators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.7rem;
+    flex: 1;
+}
+
+@media (min-width: 1100px) {
+    .bento-creators .fav-creators-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+}
+
+.bento-creators .creator-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-width: 0;
+    min-height: 150px;
+    padding: 0.7rem 0.45rem;
+    text-align: center;
+}
+
+.bento-creators {
+    min-height: 280px;
+}
+
+.bento-creators .creator-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    width: auto;
+}
+
+.bento-creators .creator-name-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bento-creators .creator-name,
+.bento-creators .creator-handle {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bento-creators .creator-yt-badge {
+    font-size: 1.15rem;
+}
+
 .bento-music .artist-details,
 .bento-music .song-info {
     display: flex;
@@ -1073,6 +1137,87 @@ a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.bento-games .fav-games-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+}
+
+.bento-games .fav-game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    min-height: 150px;
+    padding: 1.25rem;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    border-radius: 10px;
+    background: rgba(6, 182, 212, 0.15);
+    text-align: center;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.bento-games .fav-game-item:hover {
+    background: rgba(6, 182, 212, 0.3);
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+.bento-games .fav-game-icon {
+    font-size: 2.75rem;
+    color: #7dd3fc;
+}
+
+.bento-games .fav-game-image {
+    width: 100% !important;
+    height: 280px !important;
+    max-width: 640px !important;
+    min-width: 0 !important;
+    max-height: none !important;
+    border-radius: 6px !important;
+    object-fit: cover !important;
+}
+
+.bento-games .fav-game-app-icon {
+    position: relative;
+    z-index: 1;
+    width: 72px !important;
+    height: 72px !important;
+    min-width: 72px !important;
+    max-width: 72px !important;
+    min-height: 72px !important;
+    max-height: 72px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin-top: -36px !important;
+}
+
+.bento-games .fav-game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.bento-games .fav-game-info h4 {
+    margin: 0;
+    color: #e0f2fe;
+    font-size: 1.15rem;
+}
+
+.bento-games .fav-game-info span {
+    color: #bae6fd;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    .bento-games .fav-games-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .bento-colors .fav-colors-grid {
