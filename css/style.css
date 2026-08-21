@@ -243,7 +243,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* About Page Specific Styles */
@@ -408,7 +408,7 @@ a:hover {
     height: auto;
     z-index: -1;
     transform: translateX(-50%) translateY(-60%);
-    background-size: cover;
+    background-size: 100% 100%;
     transition: 1s opacity;
 }
 
@@ -915,11 +915,10 @@ a:hover {
    COMPONENTS INSIDE BENTO BOXES (BALANCED HEIGHTS)
    ========================================= */
 
-/* Strict avatar & icon sizing for the whole grid */
-.favorites-grid img,
-.mini-avatar,
-.artist-avatar,
-.creator-avatar {
+/* Keep small decorative icons tiny, but do not shrink profile images */
+.favorites-grid .mini-avatar,
+.favorites-grid .fav-game-icon,
+.favorites-grid .song-play-overlay i {
     width: 22px !important;
     height: 22px !important;
     min-width: 22px !important;
@@ -963,15 +962,39 @@ a:hover {
     position: relative;
     gap: 0.45rem;
     padding: 0.7rem 0.45rem;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.bento-music .artist-avatar {
+.bento-music .artist-card:hover {
+    background: rgba(168, 85, 247, 0.12);
+    border-color: rgba(192, 132, 252, 0.9);
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 24px rgba(168, 85, 247, 0.28);
+    text-decoration: none;
+}
+
+.bento-music .artist-avatar,
+.bento-creators .creator-avatar {
     width: 56px !important;
     height: 56px !important;
     min-width: 56px !important;
     max-width: 56px !important;
     min-height: 56px !important;
     max-height: 56px !important;
+    display: block !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.bento-music .artist-card:hover .artist-avatar {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 10px 20px rgba(168, 85, 247, 0.22);
+    filter: drop-shadow(0 8px 14px rgba(168, 85, 247, 0.2));
 }
 
 .bento-creators .creator-avatar {
@@ -981,6 +1004,17 @@ a:hover {
     max-width: 88px !important;
     min-height: 88px !important;
     max-height: 88px !important;
+    display: block !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.bento-creators .creator-card:hover .creator-avatar {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 10px 20px rgba(239, 68, 68, 0.22);
+    filter: drop-shadow(0 8px 14px rgba(239, 68, 68, 0.2));
 }
 
 .bento-creators .fav-creators-grid {
@@ -1006,6 +1040,18 @@ a:hover {
     min-height: 150px;
     padding: 0.7rem 0.45rem;
     text-align: center;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bento-creators .creator-card:hover {
+    background: rgba(239, 68, 68, 0.12);
+    border-color: rgba(248, 113, 113, 0.9);
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 24px rgba(239, 68, 68, 0.28);
+    text-decoration: none;
 }
 
 .bento-creators {
@@ -1056,13 +1102,31 @@ a:hover {
     white-space: nowrap;
 }
 
-.bento-music .artist-yt-badge {
+.bento-music .artist-yt-badge,
+.bento-creators .creator-yt-badge {
     font-size: 1.1rem;
     margin-top: 0.1rem;
+    color: #ff3b3b !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: 0 0 8px rgba(255, 59, 59, 0.7), 0 0 16px rgba(255, 59, 59, 0.4);
 }
 
 .bento-music .fav-group-label > i {
     font-size: 1.5rem;
+}
+
+.bento-music .fav-music-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.bento-music .fav-music-group + .fav-music-group {
+    margin-top: 1.2rem;
 }
 
 .bento-music > .fav-music-group:last-of-type .fav-group-label {
@@ -1070,7 +1134,20 @@ a:hover {
 }
 
 .bento-music .song-card {
+    padding: 0.55rem;
     gap: 0.45rem;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    text-decoration: none;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bento-music .song-card:hover {
+    background: rgba(168, 85, 247, 0.12);
+    border-color: rgba(192, 132, 252, 0.9);
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 24px rgba(168, 85, 247, 0.28);
 }
 
 .bento-music .song-thumb-wrapper {
@@ -1105,7 +1182,7 @@ a:hover {
 .bento-food .fav-food-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.65rem;
+    gap: 0.75rem;
 }
 
 .bento-food {
@@ -1120,27 +1197,59 @@ a:hover {
 }
 
 .bento-food .fav-food-item {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.6rem;
-    padding: 0.7rem;
-    border: 1px solid rgba(245, 158, 11, 0.35);
-    border-radius: 8px;
-    background: rgba(245, 158, 11, 0.15);
-    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 110px;
+    padding: 0.8rem 0.65rem 0.7rem;
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255, 214, 102, 0.2), rgba(120, 53, 15, 0.22));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 8px 18px rgba(15, 10, 5, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    text-align: center;
 }
 
 .bento-food .fav-food-item:hover {
-    background: rgba(245, 158, 11, 0.3);
+    background: linear-gradient(180deg, rgba(251, 191, 36, 0.28), rgba(120, 53, 15, 0.28));
     border-color: #fbbf24;
-    transform: translateY(-2px);
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 12px 22px rgba(245, 158, 11, 0.22);
+}
+
+.bento-food .fav-num {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.9rem;
+    padding: 0.2rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fef3c7;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.bento-food .fav-food-icon {
+    font-size: 1.9rem;
+    line-height: 1;
+    filter: drop-shadow(0 3px 8px rgba(255, 255, 255, 0.14));
 }
 
 .bento-food .fav-food-name {
     min-width: 0;
-    overflow: hidden;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #fff7ed;
+    letter-spacing: 0.02em;
     text-overflow: ellipsis;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 .bento-games .fav-games-grid {
@@ -1240,8 +1349,18 @@ a:hover {
     min-width: 0;
     padding: 0.8rem 0.5rem;
     border: 1px solid rgba(165, 180, 252, 0.35);
-    border-radius: 8px;
-    background: rgba(129, 140, 248, 0.15);
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(165, 180, 252, 0.14), rgba(30, 41, 59, 0.16));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 8px 18px rgba(15, 23, 42, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    cursor: pointer;
+}
+
+.bento-colors .fav-color-card:hover {
+    background: linear-gradient(180deg, rgba(165, 180, 252, 0.22), rgba(30, 41, 59, 0.24));
+    border-color: rgba(165, 180, 252, 0.95);
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 28px rgba(129, 140, 248, 0.28);
 }
 
 .bento-colors .fav-swatch-box {
@@ -1601,9 +1720,51 @@ a:hover {
 
 .spotify-embed-wrapper {
     max-width: 100%;
+    flex: 1;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+.spotify-profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    aspect-ratio: 1920 / 900;
+    padding: 1.25rem;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), url('../images/spotify.png');
+    background-position: center;
+    background-size: 100% 100%;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.spotify-profile-link span {
+    align-self: flex-end;
+    margin-bottom: 2.25rem;
+    padding: 0.55rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.62);
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.spotify-profile-link:hover {
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url('../images/spotify.png');
+    background-size: 100% 100%;
+    text-decoration: none;
+}
+
+.spotify-profile-link:hover span {
+    border-color: rgba(134, 239, 172, 0.75);
+    background: rgba(29, 185, 84, 0.72);
 }
 
 .contact-section {
