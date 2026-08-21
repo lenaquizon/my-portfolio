@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,8 +23,60 @@
             </div>
         </section>
 
-        <section class="content-cards">
-            <!-- Content for gallery will go here -->
+        <section class="gallery-showcase">
+            <div class="gallery-heading">
+                <div>
+                    <p class="gallery-kicker">Collected moments</p>
+                    <h2>A few places, colors, and views worth remembering.</h2>
+                </div>
+                <p class="gallery-count">10 photographs</p>
+            </div>
+
+            <div class="gallery-viewer">
+                <div class="gallery-stage" id="gallery-stage">
+                    <img id="gallery-main-image" src="images/bridge.jpg" alt="Bridge surrounded by scenery">
+                    <a id="gallery-open-image" class="gallery-open-image" href="images/bridge.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open current photograph in full size"><i class="fas fa-expand" aria-hidden="true"></i></a>
+                    <button id="gallery-previous" class="gallery-control gallery-previous" type="button" aria-label="Previous photograph"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                    <button id="gallery-next" class="gallery-control gallery-next" type="button" aria-label="Next photograph"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    <div class="gallery-stage-caption">
+                        <p id="gallery-main-title">Between here and there</p>
+                        <span id="gallery-main-category">Bridge</span>
+                    </div>
+                </div>
+
+                <div class="gallery-thumbnails" aria-label="Choose a photograph">
+                    <button class="gallery-thumbnail is-selected" type="button" data-gallery-src="images/bridge.jpg" data-gallery-title="Between here and there" data-gallery-category="Bridge" aria-label="View Bridge photograph">
+                        <img src="images/bridge.jpg" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/ferris1.jpg" data-gallery-title="Up in the air" data-gallery-category="Ferris wheel" aria-label="View Ferris wheel photograph">
+                        <img src="images/ferris1.jpg" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/ferris2.jpg?v=2" data-gallery-title="Lights in motion" data-gallery-category="Ferris wheel" aria-label="View second Ferris wheel photograph">
+                        <img src="images/ferris2.jpg?v=2" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/IMG_20240418_124646_208.jpg" data-gallery-title="A little detail" data-gallery-category="April 2024" aria-label="View April 2024 photograph">
+                        <img src="images/IMG_20240418_124646_208.jpg" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/IMG_20250224_181003.jpg" data-gallery-title="Found in the moment" data-gallery-category="February 2025" aria-label="View February 2025 photograph">
+                        <img src="images/IMG_20250224_181003.jpg" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/IMG_20250224_181010.jpg" data-gallery-title="A changing view" data-gallery-category="February 2025" aria-label="View second February 2025 photograph">
+                        <img src="images/IMG_20250224_181010.jpg" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/sunset1.jpg" data-gallery-title="When the sky turns gold" data-gallery-category="Sunset" aria-label="View golden sunset photograph">
+                        <img src="images/sunset1.jpg" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/sunset2.jpg" data-gallery-title="Last light" data-gallery-category="Sunset" aria-label="View second sunset photograph">
+                        <img src="images/sunset2.jpg" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/sunset3.jpg" data-gallery-title="Soft horizon" data-gallery-category="Sunset" aria-label="View third sunset photograph">
+                        <img src="images/sunset3.jpg" alt="" loading="eager">
+                    </button>
+                    <button class="gallery-thumbnail" type="button" data-gallery-src="images/windmill.jpg" data-gallery-title="Still turning" data-gallery-category="Windmill" aria-label="View windmill photograph">
+                        <img src="images/windmill.jpg" alt="" loading="eager">
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
 

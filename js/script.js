@@ -131,4 +131,62 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // --- Gallery Viewer ---
+    const galleryThumbnails = [...document.querySelectorAll('.gallery-thumbnail')];
+    const galleryMainImage = document.getElementById('gallery-main-image');
+    const galleryOpenImage = document.getElementById('gallery-open-image');
+    const galleryMainTitle = document.getElementById('gallery-main-title');
+    const galleryMainCategory = document.getElementById('gallery-main-category');
+    const galleryPrevious = document.getElementById('gallery-previous');
+    const galleryNext = document.getElementById('gallery-next');
+    const galleryStage = document.getElementById('gallery-stage');
+
+    if (galleryThumbnails.length && galleryMainImage && galleryOpenImage && galleryMainTitle && galleryMainCategory && galleryStage) {
+        let activeGalleryIndex = 0;
+        let galleryAutoplay;
+
+        const showGalleryImage = (index) => {
+            activeGalleryIndex = (index + galleryThumbnails.length) % galleryThumbnails.length;
+            const thumbnail = galleryThumbnails[activeGalleryIndex];
+            const { gallerySrc, galleryTitle, galleryCategory } = thumbnail.dataset;
+            galleryStage.classList.add('is-changing');
+
+            window.setTimeout(() => {
+                galleryMainImage.src = gallerySrc;
+                galleryMainImage.alt = galleryTitle;
+                galleryOpenImage.href = gallerySrc;
+                galleryMainTitle.textContent = galleryTitle;
+                galleryMainCategory.textContent = galleryCategory;
+                galleryThumbnails.forEach((item, itemIndex) => {
+                    item.classList.toggle('is-selected', itemIndex === activeGalleryIndex);
+                });
+                galleryStage.classList.remove('is-changing');
+            }, 180);
+        };
+
+        const resetGalleryAutoplay = () => {
+            window.clearInterval(galleryAutoplay);
+            galleryAutoplay = window.setInterval(() => showGalleryImage(activeGalleryIndex + 1), 6000);
+        };
+
+        const moveGalleryImage = (index) => {
+            showGalleryImage(index);
+            resetGalleryAutoplay();
+        };
+
+        galleryThumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => moveGalleryImage(index));
+        });
+
+        galleryPrevious?.addEventListener('click', () => moveGalleryImage(activeGalleryIndex - 1));
+        galleryNext?.addEventListener('click', () => moveGalleryImage(activeGalleryIndex + 1));
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'ArrowLeft') moveGalleryImage(activeGalleryIndex - 1);
+            if (event.key === 'ArrowRight') moveGalleryImage(activeGalleryIndex + 1);
+        });
+
+        resetGalleryAutoplay();
+    }
+
 });
