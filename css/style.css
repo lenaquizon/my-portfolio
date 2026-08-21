@@ -380,10 +380,377 @@ a:hover {
         linear-gradient(90deg, rgba(234, 179, 8, 0.1) 1px, transparent 1px);
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.skill-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 260px;
+    padding: 1.75rem;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+    background: linear-gradient(145deg, rgba(38, 35, 17, 0.94), rgba(23, 30, 28, 0.92));
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card::after {
+    position: absolute;
+    right: -3rem;
+    bottom: -4rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: rgba(234, 179, 8, 0.1);
+    content: '';
+    pointer-events: none;
+}
+
+.skill-card:hover {
+    border-color: rgba(250, 204, 21, 0.9);
+    box-shadow: 0 14px 30px rgba(234, 179, 8, 0.18);
+    transform: translateY(-5px);
+}
+
+.skill-card-heading {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    margin-bottom: 1.1rem;
+}
+
+.skill-card-heading > i {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    border-radius: 10px;
+    color: #fde047;
+    background: rgba(234, 179, 8, 0.14);
+    font-size: 1.25rem;
+}
+
+.skill-eyebrow,
+.skill-note {
+    margin: 0;
+    color: #facc15;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.skill-card h2 {
+    margin: 0.2rem 0 0;
+    color: #fff7cc;
+    font-size: 1.35rem;
+}
+
+.skill-note {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0.8rem;
+    color: rgba(255, 247, 204, 0.62);
+    letter-spacing: 0.04em;
+}
+
+.skill-list {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skill-list li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 2.8rem;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid rgba(250, 204, 21, 0.14);
+    border-left: 3px solid rgba(250, 204, 21, 0.65);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.88);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.035));
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.skill-list li:hover {
+    border-color: rgba(250, 204, 21, 0.62);
+    background: rgba(250, 204, 21, 0.12);
+    transform: translateX(4px);
+}
+
+.skill-list li {
+    line-height: 1.35;
+}
+
+@media (max-width: 700px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .bucket-list-hero {
     background-image:
         linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
         linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px);
+}
+
+.bucket-intro {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+    padding: 1.75rem 1.5rem;
+}
+
+.bucket-kicker,
+.bucket-chapter-label {
+    margin: 0 0 0.45rem;
+    color: #86efac;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.bucket-intro h2 {
+    max-width: 620px;
+    overflow-wrap: anywhere;
+    margin: 0;
+    color: #ecfdf5;
+    font-size: clamp(1.5rem, 3vw, 2.35rem);
+    line-height: 1.15;
+}
+
+.bucket-stats {
+    display: flex;
+    align-self: flex-start;
+    gap: 1.4rem;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-top: 0.9rem;
+    justify-content: center;
+    color: rgba(236, 253, 245, 0.58);
+    font-size: 0.86rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bucket-stats span {
+    display: grid;
+    gap: 0.2rem;
+    min-width: 5.5rem;
+    text-align: center;
+}
+
+.bucket-stats strong {
+    color: #bbf7d0;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.bucket-roadmap {
+    position: relative;
+    display: grid;
+    gap: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.bucket-roadmap::before {
+    position: absolute;
+    top: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+    width: 1px;
+    background: linear-gradient(to bottom, rgba(134, 239, 172, 0), rgba(134, 239, 172, 0.55), rgba(134, 239, 172, 0));
+    content: '';
+}
+
+.bucket-chapter {
+    --bucket-accent: #86efac;
+    --bucket-panel: rgba(16, 37, 28, 0.78);
+    position: relative;
+    display: grid;
+    grid-template-columns: 4rem minmax(0, 1fr);
+    gap: 1.5rem;
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+    border: 1px solid color-mix(in srgb, var(--bucket-accent) 32%, transparent);
+    border-left: 4px solid var(--bucket-accent);
+    border-radius: 14px;
+    background: linear-gradient(105deg, var(--bucket-panel), rgba(8, 19, 14, 0.52));
+    padding: 1.5rem 0.75rem 1.5rem 0.1rem;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.18);
+    transition: transform 0.25s ease;
+}
+
+.bucket-chapter:hover {
+    border-color: color-mix(in srgb, var(--bucket-accent) 68%, transparent);
+    transform: translateX(0.35rem);
+}
+
+.bucket-chapter-travel {
+    --bucket-accent: #5eead4;
+    --bucket-panel: rgba(13, 48, 47, 0.78);
+}
+
+.bucket-chapter-landmarks {
+    --bucket-accent: #fcd34d;
+    --bucket-panel: rgba(57, 43, 15, 0.78);
+}
+
+.bucket-chapter-adventure {
+    --bucket-accent: #fb923c;
+    --bucket-panel: rgba(61, 34, 17, 0.78);
+}
+
+.bucket-chapter-entertainment {
+    --bucket-accent: #f9a8d4;
+    --bucket-panel: rgba(61, 22, 46, 0.78);
+}
+
+.bucket-chapter-growth {
+    --bucket-accent: #c4b5fd;
+    --bucket-panel: rgba(43, 30, 72, 0.78);
+}
+
+.bucket-chapter-life {
+    --bucket-accent: #93c5fd;
+    --bucket-panel: rgba(20, 42, 68, 0.78);
+}
+
+.bucket-chapter-marker {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    width: 4rem;
+    height: 4rem;
+    transform: translateX(0.85rem);
+    border: 1px solid color-mix(in srgb, var(--bucket-accent) 72%, transparent);
+    border-radius: 50%;
+    color: var(--bucket-accent);
+    background: color-mix(in srgb, var(--bucket-accent) 12%, #10251c);
+    box-shadow: 0 0 0 8px #08130e;
+}
+
+.bucket-chapter-marker i {
+    font-size: 1.1rem;
+}
+
+.bucket-chapter-marker span {
+    color: color-mix(in srgb, var(--bucket-accent) 70%, white);
+    font-size: 0.6rem;
+}
+
+.bucket-chapter-content {
+    min-width: 0;
+    max-width: 100%;
+    padding: 0.35rem 0 1.2rem;
+    transition: opacity 0.25s ease;
+}
+
+.bucket-chapter h2 {
+    overflow-wrap: anywhere;
+    margin: 0 0 1rem;
+    color: #f0fdf4;
+    font-size: 1.75rem;
+}
+
+.bucket-list-items {
+    column-count: 2;
+    column-gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: bucket-item;
+}
+
+.bucket-list-items li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 0 0.45rem;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    color: rgba(236, 253, 245, 0.8);
+    background: rgba(255, 255, 255, 0.035);
+    font-size: 0.98rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    counter-increment: bucket-item;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.bucket-list-items li::before {
+    min-width: 1.6rem;
+    color: var(--bucket-accent, #86efac);
+    content: counter(bucket-item, decimal-leading-zero);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.7rem;
+}
+
+.bucket-list-items li:hover {
+    border-color: color-mix(in srgb, var(--bucket-accent, #86efac) 45%, transparent);
+    color: #ffffff;
+    background: color-mix(in srgb, var(--bucket-accent, #86efac) 10%, transparent);
+    transform: translateX(5px);
+}
+
+@media (max-width: 700px) {
+    .bucket-intro {
+        align-items: start;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .bucket-stats {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .bucket-roadmap::before {
+        left: 1.5rem;
+    }
+
+    .bucket-chapter {
+        grid-template-columns: 3rem minmax(0, 1fr);
+        gap: 1rem;
+    }
+
+    .bucket-chapter-marker {
+        width: 3rem;
+        height: 3rem;
+        box-shadow: 0 0 0 6px #08130e;
+        transform: translateX(0.65rem);
+    }
+
+    .bucket-list-items {
+        column-count: 1;
+    }
 }
 
 .gallery-hero {
@@ -1239,11 +1606,13 @@ a:hover {
     font-size: 1.9rem;
     line-height: 1;
     filter: drop-shadow(0 3px 8px rgba(255, 255, 255, 0.14));
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
 }
 
 .bento-food .fav-food-name {
-    min-width: 0;
-    font-size: 0.82rem;
+    .bucket-list-items {
+        grid-template-columns: 1fr;
     font-weight: 700;
     color: #fff7ed;
     letter-spacing: 0.02em;
