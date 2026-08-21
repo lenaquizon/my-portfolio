@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const swiperWrapper = modal.querySelector('.swiper-wrapper');
         const closeButton = modal.querySelector('.close-button');
         let swiper;
+        let modalCloseTimer;
 
         const openModal = (carouselType) => {
             let data = carouselData[carouselType];
@@ -62,33 +63,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
             data.forEach(item => {
                 const slide = `
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="--slide-image: url('${item.img}')">
                         <img src="${item.img}" alt="${item.text}">
                         <p>${item.text}</p>
                     </div>`;
                 swiperWrapper.insertAdjacentHTML('beforeend', slide);
             });
 
+            window.clearTimeout(modalCloseTimer);
             modal.style.display = 'block';
+            requestAnimationFrame(() => modal.classList.add('is-visible'));
             
             // Use requestAnimationFrame to ensure the browser has rendered the modal
             // before we initialize Swiper. This can help with performance.
             requestAnimationFrame(() => {
                 if (swiper) swiper.destroy(true, true);
                 swiper = new Swiper('.swiper-container', {
-                    effect: 'coverflow',
+                    effect: 'fade',
                     grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: 'auto',
-                    speed: 1000, // Increased for a potentially smoother feel
-                    coverflowEffect: {
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    },
+                    centeredSlides: false,
+                    slidesPerView: 1,
+                    speed: 750,
                     loop: true,
+                    fadeEffect: {
+                        crossFade: true,
+                    },
+                    resistanceRatio: 0.7,
+                    watchSlidesProgress: true,
+                    observer: true,
+                    observeParents: true,
+                    keyboard: {
+                        enabled: true,
+                    },
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true,
@@ -102,7 +108,10 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         const closeModal = () => {
-            modal.style.display = 'none';
+            modal.classList.remove('is-visible');
+            modalCloseTimer = window.setTimeout(() => {
+                modal.style.display = 'none';
+            }, 250);
         };
 
         // Open modal when a carousel card is clicked
