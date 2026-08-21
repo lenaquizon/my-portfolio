@@ -642,8 +642,8 @@ a:hover {
     display: grid;
     place-items: center;
     align-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     transform: translateX(0.85rem);
     border: 1px solid color-mix(in srgb, var(--bucket-accent) 72%, transparent);
     border-radius: 50%;
@@ -742,8 +742,8 @@ a:hover {
     }
 
     .bucket-chapter-marker {
-        width: 3rem;
-        height: 3rem;
+        width: 2.75rem;
+        height: 2.75rem;
         box-shadow: 0 0 0 6px #08130e;
         transform: translateX(0.65rem);
     }
